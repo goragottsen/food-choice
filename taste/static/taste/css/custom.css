@@ -1,0 +1,105 @@
+.card{
+    margin-bottom: 2em;
+}
+
+.jumbotron {
+    margin: 0;
+    background-color: #17a2b8;
+    color: #ffffff;
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+
+input[type="range"] { 
+    margin: auto;
+    -webkit-appearance: none;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+    height: 15px;
+    border-radius: 5px; 
+    outline: none;
+    opacity: 0.8;
+}
+
+/*
+ * 1. Set to 0 width and remove border for a slider without a thumb
+ */
+ ::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px; /* 1 */
+    height: 25px;
+    background: rgb(78, 77, 83);
+}
+
+::-webkit-slider-thumb {
+    box-shadow: -100vw 0 0 100vw linear-gradient(to right,#ffffff, #067b8d);
+    
+}
+::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, #ffffff, #067b8d);
+}
+
+::-moz-range-track {
+    height: 40px;
+    background: #ddd;
+}
+
+::-moz-range-thumb {
+    background: #fff;
+    height: 40px;
+    width: 200px;
+    border: 3px solid #999;
+    border-radius: 0 !important;
+    box-shadow: -100vw 0 0 100vw dodgerblue;
+    box-sizing: border-box;
+}
+
+::-ms-fill-lower { 
+    background: dodgerblue;
+}
+
+::-ms-thumb { 
+    background: rgb(255, 255, 255);
+    border: 2px solid #999;
+    height: 40px;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+::-ms-ticks-after { 
+    display: none; 
+}
+
+::-ms-ticks-before { 
+    display: none; 
+}
+
+::-ms-track { 
+    background: #ddd;
+    color: transparent;
+    height: 40px;
+    border: none;
+}
+
+::-ms-tooltip { 
+    display: none;
+}
+
+.btn, .btn-primary, .btn-lg{
+    display: block;
+    margin: 5px;
+}
+
+#btn-back{
+    padding: 5px;
+    margin: auto;
+    display: inline-block;
+}
+
+h3{
+    color: #17a2b8;
+}

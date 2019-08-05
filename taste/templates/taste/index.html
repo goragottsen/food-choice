@@ -1,0 +1,22 @@
+{% extends 'taste/layout.html' %}
+
+{% block content %}
+<h3 class="text-center">Choose your table</h3>
+
+<div class="pic-container">
+    {% load static %}
+  {% comment %} <img src="{% static "taste/images/classroom-seating-chart.jpg" %}" alt="Classroom Draft" id="classroom-image" style="width:100%;"> {% endcomment %}
+  <div class="hero-text"> 
+    <div class="row mx-lg-n4 align-items-center">
+    <div class="col py-3 px-lg-6">
+        <a href="/taste/1/table" role="button" class="btn btn-outline-info btn-lg">1</a>
+        </div>
+        <div class="col py-3 px-lg-6">
+        <a href="/taste/2/table" role="button" class="btn btn-outline-info btn-lg">2</a>
+        </div>
+        <div class="col py-3 px-lg-6">
+        <a href="/taste/3/table" role="button" class="btn btn-outline-info btn-lg">3</a>
+        </div>
+    </div>
+    <div class="row mx-lg-n4 align-items-center">
+    {% endblock %}

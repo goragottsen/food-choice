@@ -1,0 +1,69 @@
+{% extends 'taste/layout.html' %}
+{% block content %}
+<h3 class="text-center grey lighten-3">{{ table.table }}</h3>
+
+<div class="card">
+  <div class="card-header">
+    Salad
+  </div>
+  <div class="card-body">
+  <ul class="list-group list-group-flush">
+  <li class="list-group-item">
+    <div class="col s12 s12">
+       <label for="spicy">Spicy</label>         
+            <form method="POST">
+                {% csrf_token %}
+
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="10" value="5" class="slider" id="spicy">
+                </div>
+            </form>         
+            </div>
+        </li>
+        <li class="list-group-item">
+            <li class="list-group-item">
+    <div class="col s12 s12">
+        <label for="sweet">Sour</label>
+
+        <div class="slidecontainer">
+                    <input type="range" min="0" max="10" value="5" class="slider" id="sour">
+                </div>
+            </div>
+            </li>
+        </ul>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    Cake
+  </div>
+  <div class="card-body">
+  <ul class="list-group list-group-flush">
+
+        <li class="list-group-item">
+    <div class="col s12 s12">
+        <label for="sweet">Sweet</label>
+            <form method="POST">
+                {% csrf_token %}
+        <div class="slidecontainer">
+                    <input type="range" min="0" max="10" value="5" class="slider" id="sweet">
+                </div>
+                </form>
+            </div>
+            </li>
+            <li class="list-group-item">
+    <div class="col s12 s12">
+        <label for="moist">Moist</label>
+
+        <div class="slidecontainer">
+                    <input type="range" min="0" max="10" value="5" class="slider" id="moist">
+                </div>
+            </div>
+            </li>
+        </ul>
+  </div>
+</div>
+
+<a href="/taste" role="button" id="btn-back" class="btn btn-info">Go Back</a>
+{% endblock %}

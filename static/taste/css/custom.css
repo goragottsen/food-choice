@@ -1,0 +1,133 @@
+.card{
+    margin-bottom: 2em;
+}
+
+.jumbotron {
+    margin: 0;
+}
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+  }
+
+input[type="range"] { 
+    margin: auto;
+    -webkit-appearance: none;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+    height: 15px;
+    border-radius: 5px; 
+    outline: none;
+    opacity: 0.8;
+}
+
+/*
+ * 1. Set to 0 width and remove border for a slider without a thumb
+ */
+ ::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px; /* 1 */
+    height: 25px;
+    background: rgb(78, 77, 83);
+}
+
+/* /*
+ * 1. intensity gradient: black to white
+ */
+/* #intensity::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+}
+ #intensity::-webkit-slider-thumb {
+    box-shadow: -100vw 0 0 100vw linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+} */
+
+/*
+ * 2. Color gradient: rainbow
+ */
+/* #color::-webkit-slider-thumb {
+    box-shadow: -100vw 0 0 100vw linear-gradient(to right,rgb(240, 186, 186),rgb(233, 204, 149),rgb(226, 226, 170),rgb(190, 243, 190),rgb(172, 172, 235),rgb(205, 164, 235));
+    
+}
+#color::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, rgb(240, 186, 186),rgb(233, 204, 149),rgb(226, 226, 170),rgb(190, 243, 190),rgb(172, 172, 235),rgb(205, 164, 235));
+} */
+
+/*
+ * 3. Temperature gradient: blue to red
+ */
+::-webkit-slider-thumb {
+    box-shadow: -100vw 0 0 100vw linear-gradient(to right,#6f9aeb, #e28383);
+    
+}
+::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, #6f9aeb, #e28383);
+}
+
+/*
+ * 3. Temperature gradient: blue to red
+ */
+ /* #humidity::-webkit-slider-thumb {
+    box-shadow: -100vw 0 0 100vw linear-gradient(to right,#f2f3a5, #6365ec);
+    
+}
+#humidity::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, #f2f3a5, #6365ec);
+} */
+
+::-moz-range-track {
+    height: 40px;
+    background: #ddd;
+}
+
+::-moz-range-thumb {
+    background: #fff;
+    height: 40px;
+    width: 200px;
+    border: 3px solid #999;
+    border-radius: 0 !important;
+    box-shadow: -100vw 0 0 100vw dodgerblue;
+    box-sizing: border-box;
+}
+
+::-ms-fill-lower { 
+    background: dodgerblue;
+}
+
+::-ms-thumb { 
+    background: rgb(255, 255, 255);
+    border: 2px solid #999;
+    height: 40px;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+::-ms-ticks-after { 
+    display: none; 
+}
+
+::-ms-ticks-before { 
+    display: none; 
+}
+
+::-ms-track { 
+    background: #ddd;
+    color: transparent;
+    height: 40px;
+    border: none;
+}
+
+::-ms-tooltip { 
+    display: none;
+}
+
+.btn, .btn-primary, .btn-lg{
+    display: block;
+    margin: 5px;
+}
+
+#btn-back{
+    padding: 3px;
+    margin: 0;
+}
